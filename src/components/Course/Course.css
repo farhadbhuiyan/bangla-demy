@@ -17,6 +17,9 @@
 	flex-direction: row;
 	border-radius: 0;
 }
+.card-title{
+  font-weight: 600;
+}
 .card-img-top {
   width: 300px;	
 }
@@ -39,14 +42,6 @@
 	margin-top: 24px;
 	display: inline-block;
 }
-.price {
-  color: #000;
-  font-size: 19px;
-  font-weight: 400;
-  margin-bottom: 8px;
-  text-align: left;
-  transition: all .3s;
-}
 .product-discount-label {
   display: block;
   padding: 4px 15px 4px 30px;
@@ -55,4 +50,26 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+.btn{
+  background-color: #00a700;
+  color: #fff ;
+}
+.btn:hover{
+  background-color: #ef5777;
+  border: 1px solid #ef5777;
+}
+.icon{
+  color: #00a700;
+  margin-right: 5px;
+}
+.red-text{
+  color: #ef5777;
+}
+span{
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.card-block-content p{
+  margin-bottom: 3px;
 }

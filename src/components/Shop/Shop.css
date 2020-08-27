@@ -12,7 +12,7 @@
   margin-bottom: 10px;
   padding-bottom: 10px;
   text-transform: uppercase;
-  border-bottom: 5px solid red;
+  border-bottom: 5px solid #00a700;
 }
 .cart-container{
   width: 22%;
@@ -23,11 +23,17 @@
 }
 .cart-container h2, .cart-container h4{
   text-align: center;
+  border-bottom: 2px solid #00a700;
+}
+.cart-container h2{
+  background-color: #00a700;
+  border-bottom: 2px solid #00a700;
+  color: #fff;
 }
 .total{
-  background-color: greenyellow;
-  padding: 20px;
+  background-color: #ef5777;;
+  padding: 10px;
   font-size: 20px;
   font-weight: 700;
-  margin: 5px;
+  color: #fff;
 }

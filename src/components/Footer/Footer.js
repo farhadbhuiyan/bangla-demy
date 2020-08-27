@@ -14,6 +14,13 @@ import master from '../../images/master-card.png';
 const Footer = () => {
   return (
     <div>
+        <div>
+          <div className="top-footer">
+            <h1>Get personal learning recommendations</h1>
+            <h6>Answer a few questions for your top picks</h6>
+            <button className="btn btn-primary">Get Started</button>
+          </div>
+        </div>
       <Container>
         <Row>
           <Col xs={12} md={6}>

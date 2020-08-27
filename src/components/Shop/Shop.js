@@ -11,12 +11,15 @@ const Shop = () => {
 
   const [cart, setCart] = useState([]);
 
+  //function for handle add course
   const handleAddCourse = (course) => {
     const newCart = [...cart, course];
     setCart(newCart);
   }
 
+  //calculate total price 
   const totalPrice = cart.reduce((total, current) => total + current.currentPrice, 0);
+
   return (
     <div className="shop-container">
       <div className="product-container">
@@ -34,7 +37,7 @@ const Shop = () => {
           <h6 className="total">Total: ${totalPrice.toFixed(2)} </h6>
         </div>
         <button type="button" className="btn btn-primary btn-block">
-          Checkout <span className="badge badge-light"></span>
+          Checkout
         </button>
       </div>
     </div>

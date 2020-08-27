@@ -2,32 +2,13 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, CardDeck } from 'react-bootstrap';
 import './Course.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUsers, faUser, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons'
 
 const Course = (props) => {
   console.log(props);
   return (
     <div>
-      {/* <CardDeck>
-        <Card className="nice-card">
-          <div>
-          <Card.Img variant="top" src={props.course.cover}/>
-          </div>
-          <div>
-          <Card.Body>
-            <Card.Title>{props.course.title}</Card.Title>
-            <Card.Text>
-              <p>Instructor: {props.course.author}</p>
-              <p>Price: ${props.course.currentPrice}  <span><strike>${props.course.previousPrice}</strike></span></p>
-              <p>{props.course.enrolledStudents} students are already enroled</p>
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-          </div>
-        </Card>
-      </CardDeck> */}
-
       <div className="card-container">
         <div className="card-wrap">
           <div className='card'>
@@ -37,11 +18,25 @@ const Course = (props) => {
             <div className='card-block'>
               <div className="card-block-content">
                 <h4 className='card-title'>{props.course.title}</h4>
-                <p className='card-text'>Instructoe: {props.course.author}</p>
-                <p className="price">Price: ${props.course.currentPrice}  <span><strike>${props.course.previousPrice}</strike></span></p>
-                <p>{props.course.enrolledStudents} students are already enroled</p>
+                <p className='card-text'>
+                  <FontAwesomeIcon className="icon" icon={faUser} />
+                  <span>Instructor:</span> {props.course.author}
+                </p>
+                <p className="price">
+                  <span>Price:</span> ${props.course.currentPrice}
+                  <span><strike className="red-text">${props.course.previousPrice}</strike></span>
+                </p>
+                <p>
+                  <span>Rating:</span> {props.course.rating}
+                  <FontAwesomeIcon className="icon" icon={faStarHalfAlt} />
+                </p>
+                <p>
+                  <FontAwesomeIcon className="icon" icon={faUsers} />
+                  <span>{props.course.enrolledStudents}</span> &nbsp;
+                  students are already enroled
+                </p>
                 <span className='product-discount-label'> {props.course.descountPercent}% OFF</span>
-                <button onClick={() => props.handleAddCourse(props.course)} className="btn btn-primary">Enrolled Now</button>
+                <button onClick={() => props.handleAddCourse(props.course)} className="btn btn-primary">Enroll Now</button>
               </div>
             </div>
           </div>

@@ -1,9 +1,23 @@
+.top-footer{
+  background-image: url(../../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #00a700;
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+  margin-bottom: 4.8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .footer-background{
   background-color: #fff;
   padding-top: 20px;
   color: #3c3b37;
   border-top: 1px solid #cdcdcd;
-  margin-top: 10px;
+  margin-top: 4.8rem;
 }
 .footer-background p{
   text-align: justify;
