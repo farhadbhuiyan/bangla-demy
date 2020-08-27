@@ -1,0 +1,38 @@
+.footer-background{
+  background-color: #fff;
+  padding-top: 20px;
+  color: #3c3b37;
+  border-top: 1px solid #cdcdcd;
+  margin-top: 10px;
+}
+.footer-background p{
+  text-align: justify;
+}
+.footer-logo{
+  width: 100%;
+}
+.list-unstyled li a{
+  color: #3c3b37;;
+}
+.payment-options-row{
+  border-top: 1px solid #cdcdcd;
+  margin-top: 20px;
+}
+.payment-options{
+  padding: 15px 0 0;
+}
+.payment-options p{
+  display: inline;
+  margin-right: 10px;
+  word-spacing: 3px;
+}
+.payment-options img{
+  margin-right: 10px;
+}
+.copyright{
+  margin-top: 15px;
+  padding: 15px 0;
+  background-color: #f1f2f4;
+  font-size: 90%;
+  border-top: 1px solid #cdcdcd;
+}
